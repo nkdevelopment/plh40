@@ -16,12 +16,12 @@
 EnergyMonitor emon1;                  // Δημιουργία στιγμιότυπου
 
 // WiFi σπιτιού
-const char* ssid = "cosmosdeco";      // your network SSID (name) 
-const char* password = "maratonia";   // your network password
+const char* ssid = "cosmosdeco";
+const char* password = "maratonia";
 
 // WiFi Εργαστηριακού Κέντρου Νεάπολης
-// const char* ssid = "office";   // your network SSID (name) 
-// const char* password = "administrator@56";   // your network password
+// const char* ssid = "office";
+// const char* password = "administrator@56";
 
 WiFiClient client;
 
