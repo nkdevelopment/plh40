@@ -19,14 +19,6 @@
 const char* ssid = "cosmosdeco";
 const char* password = "maratonia";
 
-// WiFi Εργαστηριακού Κέντρου Νεάπολης
-// const char* ssid = "office";
-// const char* password = "administrator@56";
-
-// WiFi Mobile Data 
-// const char* ssid = "Nektarios Huawei P30 lite";
-// const char* password = "maratonia5";
-
 //String serverName = "192.168.1.XXX";   // REPLACE WITH YOUR Raspberry Pi IP ADDRESS
 String serverName = "moodle.nkdevelopment.net";   // OR REPLACE WITH YOUR DOMAIN NAME
 String serverPath = "/upload.php";     // The default serverPath should be upload.php
