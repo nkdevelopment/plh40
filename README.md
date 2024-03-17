@@ -5,7 +5,6 @@ Department of Informatics
 Dissertation title:
 
 "Αυτοματοποιημένες μετρήσεις σε εκπαιδευτικές / εργαστηριακές διατάξεις μετρήσεων φυσικών παραμέτρων με χρήση ΙοΤ αισθητήρων."
-
 "Automated measurements in educational / laboratory devices measuring physical parameters using IoT sensors."
 
 Student: Nektarios Kontolaimakis
