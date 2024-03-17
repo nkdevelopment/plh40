@@ -7,7 +7,6 @@
 // Upload στο ESP32-CAM
 // Board: esp32 --> esp32 -> AI Thinker ESP32-CAM !!!!!!!!!!!
 // Port: COM6
-
 // Περιστροφή φακού ανάποδα φορά ρολογιού = πιο κοντά η κάμερα στην εικόνα !!!!
 
 #include <Arduino.h>
@@ -19,7 +18,6 @@
 const char* ssid = "cosmosdeco";
 const char* password = "maratonia";
 
-//String serverName = "192.168.1.XXX";   // REPLACE WITH YOUR Raspberry Pi IP ADDRESS
 String serverName = "moodle.nkdevelopment.net";   // OR REPLACE WITH YOUR DOMAIN NAME
 String serverPath = "/upload.php";     // The default serverPath should be upload.php
 
@@ -198,47 +196,6 @@ String sendPhoto() {
   }
   return getBody;
 }
-
-
-
-// void crop_image(camera_fb_t *fb, unsigned short cropLeft, unsigned short cropRight, unsigned short cropTop, unsigned short cropBottom)
-// {
-//     unsigned int maxTopIndex = cropTop * fb->width * 2;
-//     unsigned int minBottomIndex = ((fb->width*fb->height) - (cropBottom * fb->width)) * 2;
-//     unsigned short maxX = fb->width - cropRight; // In pixels
-//     unsigned short newWidth = fb->width - cropLeft - cropRight;
-//     unsigned short newHeight = fb->height - cropTop - cropBottom;
-//     size_t newJpgSize = newWidth * newHeight *2;
-
-//     unsigned int writeIndex = 0;
-//     // Loop over all bytes
-//     for(int i = 0; i < fb->len; i+=2){
-//         // Calculate current X, Y pixel position
-//         int x = (i/2) % fb->width;
-
-//         // Crop from the top
-//         if(i < maxTopIndex){ continue; }
-
-//         // Crop from the bottom
-//         if(i > minBottomIndex){ continue; }
-
-//         // Crop from the left
-//         if(x <= cropLeft){ continue; }
-
-//         // Crop from the right
-//         if(x > maxX){ continue; }
-
-//         // If we get here, keep the pixels
-//         fb->buf[writeIndex++] = fb->buf[i];
-//         fb->buf[writeIndex++] = fb->buf[i+1];
-//     }
-
-//     // Set the new dimensions of the framebuffer for further use.
-//     fb->width = newWidth;
-//     fb->height = newHeight;
-//     fb->len = newJpgSize;
-// }
-
 
 
 
