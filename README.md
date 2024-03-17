@@ -1,6 +1,4 @@
-Hellenic Open University
-
-Department of Informatics
+Hellenic Open University - Department of Informatics
 
 Dissertation title:
 
